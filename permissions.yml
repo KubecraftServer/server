@@ -1,0 +1,46 @@
+groups:
+  default:
+    options:
+      rank: "1000"
+      default: true
+    permissions:
+      - modifyworld.chat
+  Member:
+    permissions:
+      - modifyworld.*
+    options:
+      rank: "900"
+      prefix: "&0(&8M&7ember&0)&7 "
+  VIP:
+    permissions:
+      - -modifyworld.mobtarget.monster.creeper
+      - modifyworld.*
+    options:
+      rank: "800"
+      prefix: "&0(&eVIP&0)&7 "
+  SoCreator:
+    permissions:
+      - -modifyworld.mobtarget.*
+      - modifyworld.*
+      - permissions.*
+    options:
+      rank: "100"
+      prefix: "&0(&1So-Creator&0)&7 "
+  Creator:
+    permissions:
+      - -modifyworld.mobtarget.*
+      - modifyworld.*
+      - permissions.*
+    options:
+      rank: "1"
+      prefix: "&0(&4Creator&0)&7 "
+users:
+  KingCerbX:
+    group:
+      - SoCreator
+  b0risenko:
+    group:
+      - SoCreator
+  0x77dev:
+    group:
+      - Creator

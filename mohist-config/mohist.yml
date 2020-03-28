@@ -1,0 +1,88 @@
+# This is the main configuration file for Mohist.
+# 
+# Home: https://www.mohist.red/
+# 
+# Setting: plugin.promptBug Default: false   # Prompt for possible vulnerabilities of some plugins
+# Setting: entity-tick-limit Default: 300   # Entity maximum tick limit, entities exceeding this value will not be updated
+# Setting: check_libraries Default: true   # Check libraries
+# Setting: CloseChatInConsole Default: false   # Player's chat info will not be recorded in the console after opening
+# Setting: console_name Default: Server   # Front of the console, for example /say
+# Setting: hidejoinmodslist Default: false   # Hide the list of mods displayed on the console when players join the server
+# Setting: server-type Default: FML   # Set the server type displayed in motd (FML/BUKKIT/VANILLA)
+# Setting: messages.Requirements-Mod-Version Default: version %s   # version X
+# Setting: messages.Requirements-Mod-Invalid-version Default: Requires %s but client has %s.   # Requires mod version X but client has Y
+# Setting: disable-announce-Advancements Default: false   # Turn off achievment notifications
+# Setting: eventCanceled.explosion Default: false   # BlockExplosionEvent isCanceled
+# Setting: forge.modsblacklist.list Default: aaaaa;bbbbbb   # mods black-list
+# Setting: libraries_black_list Default: aaaaa;bbbbbb   # libraries_black_list
+# Setting: messages.Outdate-Client Default: Outdated client! Please use {0}   # Outdate Client
+# Setting: messages.Rejections-Server-Mods Default: Server Mod rejections: 
+# %s   # Server-mods rejections
+# Setting: world.stopserversaveworlds Default: false   # stopserversaveworlds
+# Setting: lang Default: en_US   # Mohist internationalization language setting, will return the default system language when your settings are invalid
+# Setting: messages.use-unknow-command Default: Unknown command. Type "/help" for help.   # Prompt unknown command
+# Setting: forge.disablechunkforcesystem Default: false   # Disable ForgeChunkForceSystem
+# Setting: consolecolor.warn-msg Default: [33;1m   # consolecolor.warn-msg
+# Setting: forge.modsblacklist.kickmessage Default: Use of unauthorized mods   # mods black-list kick Message
+# Setting: keep-spawn-loaded Default: true   # Keep spawn chunk loaded
+# Setting: settings.min-chunk-load-threads Default: 2   # Keep people from doing stupid things with max of 6
+# Setting: consolecolor.warn-level Default: [33;1m   # consolecolor.warn-level
+# Setting: messages.Rejections-Hack Default: Hack rejections %s   # Hack rejections
+# Setting: consolecolor.error-level Default: [31;1m   # consolecolor.error-level
+# Setting: messages.Outdate-Server Default: Outdated server! I'm still on {0}   # Outdate Server
+# Setting: messages.Requirements-Mod-Version-range Default: version range %s   # version range X
+# Setting: fake-players.do-login Default: false   # Raise login events for fake players
+# Setting: support_nocmd Default: false   # Some server tools do not recognize I18N
+# Setting: realtimeticking Default: false   # RealTimeTicking from sponge
+# Setting: consolecolor.error-msg Default: [31;1m   # consolecolor.error-msg
+# Setting: check_update Default: true   # Check Update
+# Setting: messages.Requirements-Mod-Not-found Default: Requires %s but mod is not found on client.   # Requires mod version X but mod is not found on client
+
+plugin:
+  promptBug: false
+entity-tick-limit: 300
+check_libraries: true
+CloseChatInConsole: false
+console_name: Server
+hidejoinmodslist: false
+server-type: FML
+messages:
+  Requirements-Mod-Version: version %s
+  Requirements-Mod-Invalid-version: Requires %s but client has %s.
+  Outdate-Client: Outdated client! Please use {0}
+  Rejections-Server-Mods: "Server Mod rejections: \n%s"
+  use-unknow-command: Unknown command. Type "/help" for help.
+  Rejections-Hack: Hack rejections %s
+  Outdate-Server: Outdated server! I'm still on {0}
+  Requirements-Mod-Version-range: version range %s
+  Requirements-Mod-Not-found: Requires %s but mod is not found on client.
+disable-announce-Advancements: false
+eventCanceled:
+  explosion: false
+forge:
+  modsblacklist:
+    list: '[]'
+    kickmessage: Use of unauthorized mods
+  disablechunkforcesystem: false
+  autounloadWorld_whitelist:
+  - '0'
+  - '1'
+  - '-1'
+libraries_black_list: aaaaa;bbbbbb
+world:
+  stopserversaveworlds: false
+lang: xx_XX
+consolecolor:
+  warn-msg: e
+  warn-level: e
+  error-level: c
+  error-msg: c
+keep-spawn-loaded: true
+settings:
+  min-chunk-load-threads: 2
+fake-players:
+  do-login: false
+support_nocmd: false
+realtimeticking: false
+check_update: true
+config-version: 2
