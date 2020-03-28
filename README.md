@@ -1,0 +1,2 @@
+# server
+Our Minecraft Server.
