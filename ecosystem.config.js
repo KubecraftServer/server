@@ -3,7 +3,7 @@ const { join } = require("path")
 module.exports = {
   apps: [{
     name: 'Minecraft Server',
-    script: 'Mohist-11643ae-server.jar',
+    script: 'server.jar',
     interpreter: '/usr/bin/env',
     interpreter_args: 'java -jar',
     cwd: join(__dirname, '.'),
@@ -15,7 +15,7 @@ module.exports = {
   deploy: {
     production: {
       ref: 'origin/master',
-      repo: 'git@github.com:devmcraft/server.git',
+      repo: 'git@github.com:kubeserver/server.git',
       path: './'
     }
   }
